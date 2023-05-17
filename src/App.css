@@ -21,9 +21,12 @@
   display: flex;
   flex-direction: column;
   gap: 10px ;
+
 }
 
+
 .sidebar-header{
+  
   display: flex;
   flex-direction: row;
   min-height:60px;
@@ -69,7 +72,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   width: 90%;
-  
+  left:3%;
   border: 1px solid blue;
 }
 
