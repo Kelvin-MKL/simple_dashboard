@@ -1,0 +1,87 @@
+:root{
+  box-sizing: border-box;
+  --primary--color: rgb(193, 151, 198); /*60-30-10 color rule */
+  --second--color: rgb(225, 235, 114);
+  --third--color: rgb(239, 232, 232);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.frame {
+  width: 100%; /*alternative : vw */
+  height: 100vh; /* viewport height %*/
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar{
+  background-color: var(--second--color);
+  width:200px;
+  height: 100vh;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px ;
+}
+
+.sidebar-header{
+  display: flex;
+  flex-direction: row;
+  min-height:60px;
+  align-items: center;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.profile{
+  position: relative;
+  left: 10px;
+  border-radius: 25px;
+  height:40px;
+  width: 40px;
+  object-fit: cover;
+  
+}
+
+.profile:hover + .profile-default{
+  display:block;
+}
+.profile-default{
+  position: absolute;
+  left: 23px;
+  object-fit: cover;
+  height:40px;
+  width: 40px;
+  display: none;
+  transition: .4 ease;
+  border-radius: 25px;
+}
+
+.profileName{
+  position: relative;
+  left: 20px;
+  max-width: 105px;
+  word-wrap: break-word;
+}
+
+.sidebarItem{
+  position: relative;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 90%;
+  
+  border: 1px solid blue;
+}
+
+.sidebarItem:hover{
+  background-color: blueviolet;
+}
+
+.mainFrame{
+  background-color: var(--primary--color);
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  border-radius: 0px 10px 10px 0px;
+  
+}
